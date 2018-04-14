@@ -240,36 +240,30 @@
     }));
     shadowMesh.receiveShadow = true;
     scene.add(shadowMesh);
-    loadModal(1, './assets/myman.obj', './assets/myman.mtl');
-    loadModal(2, './assets/myman.obj', './assets/myman.mtl');
+    loadModal(1, './assets/myman.obj', './assets/myman.mtl', -5.0, -4.0, -5.0);
+    loadModal(2, './assets/myman.obj', './assets/myman.mtl', 5.0, -4.0, -5.0);
 
-    function loadModal(number, objPath, mtlPath) {
+    function loadModal(number, objPath, mtlPath, x, y, z) {
       THREE.ARUtils.loadModel({
         objPath: objPath,
         mtlPath: mtlPath
       }).then(function (group) {
         if (number === 1) {
           model1 = group;
-          // As OBJ models may contain a group with several meshes,
-          // we want all of them to cast shadow
           model1.children.forEach(function (mesh) {
             mesh.castShadow = true;
           });
           model1.scale.set(SCALE, SCALE, SCALE);
-          // Place the model very far to initialize
-          model1.position.set(-5.0, -4.0, -5.0);
+          model1.position.set(x, y, z);
           scene.add(model1);
         }
         if (number === 2) {
           model2 = group;
-          // As OBJ models may contain a group with several meshes,
-          // we want all of them to cast shadow
           model2.children.forEach(function (mesh) {
             mesh.castShadow = true;
           });
           model2.scale.set(SCALE, SCALE, SCALE);
-          // Place the model very far to initialize
-          model2.position.set(5.0, -4.0, -5.0);
+          model2.position.set(x, y, z);
           scene.add(model2);
         }
       }).catch(function (e) {
