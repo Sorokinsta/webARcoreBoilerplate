@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca93bed8-4cf2-46c2-829a-eca5b6530d92" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bossrelease.mtl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bossrelease.obj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ww2.html" afterPath="$PROJECT_DIR$/ww2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/car.html" afterPath="$PROJECT_DIR$/car.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/human.html" afterPath="$PROJECT_DIR$/human.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.html" afterPath="$PROJECT_DIR$/test.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,21 +39,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="human.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/human.html">
+      <file leaf-file-name="car.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/car.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="64" column="14" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="326" selection-end-column="7" />
+            <state relative-caret-position="297">
+              <caret line="175" column="9" lean-forward="true" selection-start-line="175" selection-start-column="9" selection-end-line="175" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="human.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/human.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="16">
+              <caret line="215" column="19" lean-forward="true" selection-start-line="215" selection-start-column="19" selection-end-line="215" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="124" column="6" lean-forward="true" selection-start-line="124" selection-start-column="6" selection-end-line="124" selection-end-column="6" />
+            <state relative-caret-position="9">
+              <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="118" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -89,8 +97,9 @@
       <find>top</find>
       <find>C:\Users\?????\Desktop\2war\cadnav.com_model\Model_C0703028\</find>
       <find>C:\Users\?????\Desktop\2war\boss\cadnav.com_model\Character_A1120265\</find>
-      <find>OBJ_PATH</find>
       <find>model3</find>
+      <find>OBJ_PATH</find>
+      <find>info</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -102,13 +111,14 @@
         <option value="$PROJECT_DIR$/assets/car2.mtl" />
         <option value="$PROJECT_DIR$/assets/CARRESIZE.mtl" />
         <option value="$PROJECT_DIR$/andrew.html" />
-        <option value="$PROJECT_DIR$/human.html" />
         <option value="$PROJECT_DIR$/assets/bossSolider.mtl" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/assets/onlyManWith.mtl" />
         <option value="$PROJECT_DIR$/assets/manwithtable.mtl" />
         <option value="$PROJECT_DIR$/ww2.html" />
         <option value="$PROJECT_DIR$/test.html" />
+        <option value="$PROJECT_DIR$/human.html" />
+        <option value="$PROJECT_DIR$/car.html" />
       </list>
     </option>
   </component>
@@ -387,12 +397,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1523670912067</updated>
-      <workItem from="1523670913708" duration="34560000" />
+      <workItem from="1523670913708" duration="36480000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34560000" />
+    <option name="totallyTimeSpent" value="36480000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="699" extended-state="6" />
@@ -547,14 +557,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/car.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="120" column="14" lean-forward="false" selection-start-line="120" selection-start-column="6" selection-end-line="120" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/manwithtable.mtl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -595,14 +597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/human.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="64" column="14" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="326" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/bossrelease.obj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
@@ -629,8 +623,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="124" column="6" lean-forward="true" selection-start-line="124" selection-start-column="6" selection-end-line="124" selection-end-column="6" />
+        <state relative-caret-position="9">
+          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="118" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/human.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="215" column="19" lean-forward="true" selection-start-line="215" selection-start-column="19" selection-end-line="215" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="175" column="9" lean-forward="true" selection-start-line="175" selection-start-column="9" selection-end-line="175" selection-end-column="9" />
           <folding />
         </state>
       </provider>

@@ -29,6 +29,7 @@
             width: 100%;
             line-height: 2em;
             text-align: center;
+            display: none;
         }
 
         #info * {
@@ -52,9 +53,114 @@
             top: 0;
             left: 0;
         }
+
+        :root {
+            --bg-color: #274a60;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .b-timeline {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            flex-flow: row nowrap;
+            background-color: var(--bg-color);
+            padding: 5px;
+            overflow: hidden;
+        }
+
+        .b-timeline__item {
+            position: relative;
+            width: 100%;
+            height: 50px;
+            overflow: hidden;
+            color: white;
+            font-family: SansSerif, sans-serif;
+        }
+
+        .b-timeline__item::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            border: 2.5px solid white;
+            width: 100%;
+        }
+
+        .b-timeline__item button {
+            width: 20px;
+            height: 20px;
+            background-color: #F44336;
+            border: 5px solid var(--bg-color);
+            transition: border-width 0.6s;
+            box-sizing: border-box;
+            border-radius: 100%;
+            margin: 5px;
+            padding: 0;
+            margin: 0;
+            position: relative;
+            top: 50%;
+            left: 10px;
+            transform: translate(0, -50%);
+        }
+
+        .b-timeline__item.active button {
+            width: 25px;
+            height: 25px;
+            background-color: greenyellow;
+        }
+
+        .b-timeline__item span {
+        }
     </style>
 </head>
 <body>
+<div class="b-timeline">
+    <div class="b-timeline__item active b-timeline__item--w3 ">
+        <button data-number="1"></button>
+        <span>1.03.1881</span>
+    </div>
+    <div class="b-timeline__item b-timeline__item--w3">
+        <button data-number="2"></button>
+        <span>1943 год</span>
+    </div>
+    <div class="b-timeline__item b-timeline__item--w3">
+        <button data-number="3"></button>
+        <span>Сегодня</span>
+    </div>
+</div>
+<script>
+  var timeLineBtn = document.getElementById("timeLineBtn");
+  var timeLineBtns = document.getElementsByClassName('b-timeline__item');
+
+  for (i = 0; i < timeLineBtns.length; i++) {
+    timeLineBtns[i].addEventListener("click", function (event) {
+      if (event.target.type === 'submit') {
+        var number = event.target.getAttribute('data-number');
+        var parent = event.target.parentElement;
+        var parents = document.getElementsByClassName('b-timeline__item');
+        for (j = 0; j < parents.length; j++) {
+          parents[j].classList.remove('active');
+        }
+        parent.classList.add("active");
+      }
+      else{
+        var target = event.target;
+        var parents = document.getElementsByClassName('b-timeline__item');
+        for (j = 0; j < parents.length; j++) {
+          parents[j].classList.remove('active');
+        }
+        target.classList.add("active");
+      }
+    }, false);
+  }
+</script>
 <div id="info">
     <span class="title">Tap to spawn an object from <a
             href="https://poly.google.com">Poly</a>.</span><br/>
@@ -75,36 +181,6 @@
 <script src="./lib/dist/three.ar.js"></script>
 <!--<script src="./lib/greensock-js/src/minified/TimelineMax.min.js"></script>-->
 <script src="./lib/greensock-js/src/minified/TweenLite.min.js"></script>
-
-
-<script>
-  var successHandler = function (position) {
-    //alert(position.coords.latitude);
-    //alert(position.coords.longitude);
-  };
-  var errorHandler = function (error) {
-    var msg;
-    switch (error.code) {
-      case error.PERMISSION_DENIED:
-        msg = "User denied the request for Geolocation.";
-        break;
-      case error.POSITION_UNAVAILABLE:
-        msg = "Location information is unavailable.";
-        break;
-      case error.TIMEOUT:
-        msg = "The request to get user location timed out.";
-        break;
-      default:
-        msg = "An unknown error occurred.";
-        break;
-    }
-  };
-  if ("geolocation" in navigator) {
-    navigator.geolocation.getCurrentPosition(
-        successHandler, errorHandler,
-        { enableHighAccuracy: true, maximumAge: 10000 });
-  }
-</script>
 <script>
   var vrDisplay;
   var vrControls;
@@ -140,8 +216,8 @@
   function init() {
 
     // Turn on the debugging panel
-    var arDebug = new THREE.ARDebug(vrDisplay);
-    document.body.appendChild(arDebug.getElement());
+//    var arDebug = new THREE.ARDebug(vrDisplay);
+//    document.body.appendChild(arDebug.getElement());
     // Setup the three.js rendering environment
     renderer = new THREE.WebGLRenderer({ alpha: true });
     renderer.setPixelRatio(window.devicePixelRatio);
