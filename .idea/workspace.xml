@@ -2,65 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca93bed8-4cf2-46c2-829a-eca5b6530d92" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/Coach1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/Coach2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/Coach3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/Coach4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/Coach5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/Coach6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/Coach7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.htaccess" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/CARRESIZE.mtl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/CARRESIZE.obj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/car2.mtl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/car2.obj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/docs.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/getting_started.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/minified/TimelineLite.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/minified/TimelineMax.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/minified/TweenLite.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/minified/TweenMax.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/minified/easing/EasePack.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/minified/jquery.gsap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/minified/plugins/AttrPlugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/minified/plugins/BezierPlugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/minified/plugins/CSSPlugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/minified/plugins/CSSRulePlugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/minified/plugins/ColorPropsPlugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/minified/plugins/DirectionalRotationPlugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/minified/plugins/EaselPlugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/minified/plugins/EndArrayPlugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/minified/plugins/ModifiersPlugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/minified/plugins/PixiPlugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/minified/plugins/RaphaelPlugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/minified/plugins/RoundPropsPlugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/minified/plugins/ScrollToPlugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/minified/plugins/TextPlugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/minified/utils/Draggable.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/uncompressed/TimelineLite.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/uncompressed/TimelineMax.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/uncompressed/TweenLite.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/uncompressed/TweenMax.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/uncompressed/easing/EasePack.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/uncompressed/jquery.gsap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/uncompressed/plugins/AttrPlugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/uncompressed/plugins/BezierPlugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/uncompressed/plugins/CSSPlugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/uncompressed/plugins/CSSRulePlugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/uncompressed/plugins/ColorPropsPlugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/uncompressed/plugins/DirectionalRotationPlugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/uncompressed/plugins/EaselPlugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/uncompressed/plugins/EndArrayPlugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/uncompressed/plugins/ModifiersPlugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/uncompressed/plugins/PixiPlugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/uncompressed/plugins/RaphaelPlugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/uncompressed/plugins/RoundPropsPlugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/uncompressed/plugins/ScrollToPlugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/uncompressed/plugins/TEMPLATE_Plugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/uncompressed/plugins/TextPlugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/greensock-js/src/uncompressed/utils/Draggable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/myman.mtl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/myman.obj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/human.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/andrew.html" afterPath="$PROJECT_DIR$/car.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/andrew.html" afterPath="$PROJECT_DIR$/andrew.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -85,11 +31,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="andrew.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/andrew.html">
+      <file leaf-file-name="car.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/car.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="306" column="14" lean-forward="true" selection-start-line="306" selection-start-column="14" selection-end-line="306" selection-end-column="14" />
+            <state relative-caret-position="238">
+              <caret line="318" column="26" lean-forward="false" selection-start-line="318" selection-start-column="26" selection-end-line="318" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="human.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/human.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="225" column="31" lean-forward="false" selection-start-line="225" selection-start-column="31" selection-end-line="225" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="myman.mtl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/myman.mtl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -100,15 +66,17 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>vrDisplay</find>
-      <find>OBJ_PATH</find>
       <find>stringify</find>
-      <find>model</find>
-      <find>SCALE</find>
       <find>position</find>
       <find>mtl</find>
       <find>json</find>
       <find>update</find>
       <find>C:\Users\?????\Desktop\model\</find>
+      <find>model</find>
+      <find>OBJ_PATH</find>
+      <find>scale</find>
+      <find>alert</find>
+      <find>SCALE</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -121,6 +89,7 @@
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/assets/CARRESIZE.mtl" />
         <option value="$PROJECT_DIR$/andrew.html" />
+        <option value="$PROJECT_DIR$/human.html" />
       </list>
     </option>
   </component>
@@ -309,10 +278,10 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/assets" />
       <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/lib/assets" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -399,12 +368,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1523670912067</updated>
-      <workItem from="1523670913708" duration="16783000" />
+      <workItem from="1523670913708" duration="20712000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16783000" />
+    <option name="totallyTimeSpent" value="20712000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="699" extended-state="6" />
@@ -519,10 +488,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/andrew.html">
+    <entry file="file://$PROJECT_DIR$/car.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="306" column="14" lean-forward="true" selection-start-line="306" selection-start-column="14" selection-end-line="306" selection-end-column="14" />
+        <state relative-caret-position="238">
+          <caret line="318" column="26" lean-forward="false" selection-start-line="318" selection-start-column="26" selection-end-line="318" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/myman.mtl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/human.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="225" column="31" lean-forward="false" selection-start-line="225" selection-start-column="31" selection-end-line="225" selection-end-column="31" />
           <folding />
         </state>
       </provider>
