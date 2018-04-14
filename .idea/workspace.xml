@@ -2,8 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca93bed8-4cf2-46c2-829a-eca5b6530d92" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ww2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/human.html" afterPath="$PROJECT_DIR$/human.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/12eb45d5.dds" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/3b4808b5.dds" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/53e66e36.dds" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/5596e237.dds" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/b601b4c9.dds" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bill_color.tga" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bill_hair.tga" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bill_head.tga" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bill_head_compress.tga" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bill_head_normal.tga" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bill_normal.tga" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/c4bc344c.dds" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/eye-iris-blue.tga" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/eye-reflection-cubemap-.tga" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/survivor_eye_ao.tga" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bossSolider.mtl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/bossSolider.obj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/manwithtable.mtl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/manwithtable.obj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/onlyManWith.mtl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/onlyManWith.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ww2.html" afterPath="$PROJECT_DIR$/ww2.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,45 +42,25 @@
       <file leaf-file-name=".htaccess" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.htaccess">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+            <state relative-caret-position="154">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="car.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/car.html">
+      <file leaf-file-name="bossSolider.mtl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/bossSolider.mtl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="318" column="26" lean-forward="false" selection-start-line="318" selection-start-column="26" selection-end-line="318" selection-end-column="26" />
+            <state relative-caret-position="100">
+              <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="human.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/human.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="myman.mtl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/myman.mtl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="woman.mtl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/woman.mtl">
+      <file leaf-file-name="bossSolider.obj" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/bossSolider.obj">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -68,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ww2.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ww2.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ww2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1668">
-              <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+            <state relative-caret-position="153">
+              <caret line="205" column="0" lean-forward="true" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -90,11 +91,14 @@
       <find>update</find>
       <find>C:\Users\?????\Desktop\model\</find>
       <find>model</find>
-      <find>OBJ_PATH</find>
       <find>scale</find>
       <find>alert</find>
       <find>SCALE</find>
       <find>top</find>
+      <find>C:\Users\?????\Desktop\2war\boss\cadnav.com_model\Character_A1120265\</find>
+      <find>model3</find>
+      <find>C:\Users\?????\Desktop\2war\cadnav.com_model\Model_C0703028\</find>
+      <find>OBJ_PATH</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -104,10 +108,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/assets/car2.mtl" />
-        <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/assets/CARRESIZE.mtl" />
         <option value="$PROJECT_DIR$/andrew.html" />
         <option value="$PROJECT_DIR$/human.html" />
+        <option value="$PROJECT_DIR$/assets/bossSolider.mtl" />
+        <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/assets/onlyManWith.mtl" />
+        <option value="$PROJECT_DIR$/assets/manwithtable.mtl" />
+        <option value="$PROJECT_DIR$/ww2.html" />
       </list>
     </option>
   </component>
@@ -296,8 +304,8 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/assets" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/lib/assets" />
     </key>
@@ -386,12 +394,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1523670912067</updated>
-      <workItem from="1523670913708" duration="24953000" />
+      <workItem from="1523670913708" duration="28416000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24953000" />
+    <option name="totallyTimeSpent" value="28416000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="699" extended-state="6" />
@@ -490,14 +498,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/CARRESIZE.mtl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6898">
@@ -506,26 +506,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/car.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="318" column="26" lean-forward="false" selection-start-line="318" selection-start-column="26" selection-end-line="318" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/woman.mtl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ww2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1668">
-          <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        <state relative-caret-position="-395">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -538,10 +522,98 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/manwithtable.obj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-66641">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/human.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+        <state relative-caret-position="-3053">
+          <caret line="57" column="15" lean-forward="false" selection-start-line="57" selection-start-column="15" selection-end-line="57" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/woman.obj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-56">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/manwithtable.mtl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="82" column="23" lean-forward="true" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/bossSolider.mtl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/bossSolider.obj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/manwithtable.mtl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="82" column="20" lean-forward="false" selection-start-line="82" selection-start-column="20" selection-end-line="82" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/onlyManWith.mtl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/manwithtable.mtl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="120" column="14" lean-forward="false" selection-start-line="120" selection-start-column="6" selection-end-line="120" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ww2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="205" column="0" lean-forward="true" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
           <folding />
         </state>
       </provider>

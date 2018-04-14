@@ -53,50 +53,10 @@
             left: 0;
         }
 
-        .b-controls {
-            position: absolute;
-            left: 50%;
-            bottom: top;
-            transform: translate(-50%, 0);
-            margin: 1em;
-            z-index: 100;
-            display: block;
-            width: 100%;
-            line-height: 2em;
-            text-align: center;
-        }
-
-        .b-controls button {
-            width: 25px;
-            height: 25px;
-            background-color: #9cdeff;
-            border: 0;
-            border-radius: 3px;
-        }
     </style>
 </head>
 <body>
-<div class="b-controls">
-    <div>
-        <h3>1</h3>
-        <button id="arLeft">←</button>
-        <button id="arTop">↑</button>
-        <button id="arBottom">↓</button>
-        <button id="arRight">→</button>
-    </div>
 
-    <div>
-        <h3>x</h3>
-        <button id="rotateXRight">⤿</button>
-        <button id="rotateXLeft">⤾</button>
-        <h3>y</h3>
-        <button id="rotateYRight">⤿</button>
-        <button id="rotateYLeft">⤾</button>
-        <h3>z</h3>
-        <button id="rotateZRight">⤿</button>
-        <button id="rotateZLeft">⤾</button>
-    </div>
-</div>
 <div id="info">
     <span class="title">Tap to spawn an object from <a
             href="https://poly.google.com">Poly</a>.</span><br/>
@@ -157,12 +117,11 @@
   var renderer;
   var model1;
   var model2;
+  var model3;
   var shadowMesh;
   var planeGeometry;
   var light;
   var directionalLight;
-  var OBJ_PATH = './assets/CARRESIZE.obj';
-  var MTL_PATH = './assets/CARRESIZE.mtl';
   var SCALE = 0.05;
   var gTime = 0;
   /**
@@ -240,10 +199,12 @@
     }));
     shadowMesh.receiveShadow = true;
     scene.add(shadowMesh);
-    loadModal(1, './assets/myman.obj', './assets/myman.mtl', -5.0, -4.0, -5.0);
-    loadModal(2, './assets/myman.obj', './assets/myman.mtl', 5.0, -4.0, -5.0);
+    loadModal(1, './assets/woman.obj', './assets/woman.mtl', -5.0, -12.0, -6.3, 0.2);
+//    loadModal(2, './assets/myman.obj', './assets/myman.mtl', 5.0, -4.0, -5.0);
+    loadModal(2, './assets/manwithtable.obj', './assets/manwithtable.mtl', 5.0, -9.0, -5.0, 0.05);
+    loadModal(3, './assets/onlyManWith.obj', './assets/onlyManWith.mtl', 5.0, -9.0, -5.0, 0.05);
 
-    function loadModal(number, objPath, mtlPath, x, y, z) {
+    function loadModal(number, objPath, mtlPath, x, y, z, scale) {
       THREE.ARUtils.loadModel({
         objPath: objPath,
         mtlPath: mtlPath
@@ -253,7 +214,7 @@
           model1.children.forEach(function (mesh) {
             mesh.castShadow = true;
           });
-          model1.scale.set(SCALE, SCALE, SCALE);
+          model1.scale.set(scale, scale, scale);
           model1.position.set(x, y, z);
           scene.add(model1);
         }
@@ -262,9 +223,18 @@
           model2.children.forEach(function (mesh) {
             mesh.castShadow = true;
           });
-          model2.scale.set(SCALE, SCALE, SCALE);
+          model2.scale.set(scale, scale, scale);
           model2.position.set(x, y, z);
           scene.add(model2);
+        }
+        if (number === 3) {
+          model3 = group;
+          model3.children.forEach(function (mesh) {
+            mesh.castShadow = true;
+          });
+          model3.scale.set(scale, scale, scale);
+          model3.position.set(x, y, z);
+          scene.add(model3);
         }
       }).catch(function (e) {
         alert(JSON.stringify(e));
@@ -363,53 +333,6 @@
 //      model1.rotation.set(0, angle, 0);
     }
   }
-
-
-  var arLeft = document.getElementById("arLeft");
-  var arTop = document.getElementById("arTop");
-  var arBottom = document.getElementById("arBottom");
-  var arRight = document.getElementById("arRight");
-
-  var rotateXRight = document.getElementById("rotateXRight");
-  var rotateXLeft = document.getElementById("rotateXLeft");
-  var rotateYRight = document.getElementById("rotateYRight");
-  var rotateYLeft = document.getElementById("rotateYLeft");
-  var rotateZRight = document.getElementById("rotateZRight");
-  var rotateZLeft = document.getElementById("rotateZLeft");
-
-  arLeft.addEventListener('click', function (e) {
-    e.preventDefault();
-    alert(1);
-    // твой код тут
-  }, false);
-  arTop.addEventListener('click', function () {
-    // твой код тут
-  }, false);
-  arBottom.addEventListener('click', function () {
-    // твой код тут
-  }, false);
-  arRight.addEventListener('click', function () {
-    // твой код тут
-  }, false);
-
-  rotateXRight.addEventListener('click', function () {
-    // твой код тут
-  }, false);
-  rotateXLeft.addEventListener('click', function () {
-    // твой код тут
-  }, false);
-  rotateYRight.addEventListener('click', function () {
-    // твой код тут
-  }, false);
-  rotateYLeft.addEventListener('click', function () {
-    // твой код тут
-  }, false);
-  rotateZRight.addEventListener('click', function () {
-    // твой код тут
-  }, false);
-  rotateZLeft.addEventListener('click', function () {
-    // твой код тут
-  }, false);
 
 </script>
 </body>
