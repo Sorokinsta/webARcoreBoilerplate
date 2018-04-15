@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>three.ar.js - Graffiti</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no,
+  minimum-scale=1.0, maximum-scale=1.0">
+    <style>
+        body {
+            font-family: monospace;
+            margin: 0;
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+        #info {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translate(-50%, 0);
+            margin: 1em;
+            z-index: 10;
+            display: block;
+            width: 100%;
+            line-height: 2em;
+            text-align: center;
+        }
+        #info * {
+            color: #fff;
+        }
+        .title {
+            background-color: rgba(40, 40, 40, 0.4);
+            padding: 0.4em 0.6em;
+            border-radius: 0.1em;
+        }
+        .links {
+            background-color: rgba(40, 40, 40, 0.6);
+            padding: 0.4em 0.6em;
+            border-radius: 0.1em;
+        }
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .b-controls {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translate(-50%, 0);
+            margin: 1em;
+            z-index: 100;
+            display: block;
+            width: 100%;
+            line-height: 2em;
+            text-align: center;
+        }
+        .b-controls button.c {
+            opacity: 0.4;
+            width: 45px;
+            height: 45px;
+            background-color: #9cdeff;
+            border: 0;
+            border-radius: 3px;
+        }
+
+        button{
+            width: 300px;
+            height: 40px;
+        }
+
+        :root {
+            --bg-color: #274a60;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .b-timeline {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            flex-flow: row nowrap;
+            background-color: var(--bg-color);
+            padding: 5px;
+            overflow: hidden;
+        }
+
+        .b-timeline__item {
+            position: relative;
+            width: 100%;
+            height: 50px;
+            overflow: hidden;
+            color: white;
+            font-family: SansSerif, sans-serif;
+        }
+
+        .b-timeline__item::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            border: 2.5px solid white;
+            width: 100%;
+        }
+
+        .b-timeline__item button {
+            width: 20px;
+            height: 20px;
+            background-color: #F44336;
+            border: 5px solid var(--bg-color);
+            transition: border-width 0.6s;
+            box-sizing: border-box;
+            border-radius: 100%;
+            margin: 5px;
+            padding: 0;
+            margin: 0;
+            position: relative;
+            top: 50%;
+            left: 10px;
+            transform: translate(0, -50%);
+        }
+
+        .b-timeline__item.active button {
+            width: 25px;
+            height: 25px;
+            background-color: greenyellow;
+        }
+
+        .b-timeline__item span {
+        }
+    </style>
+</head>
+<body>
+<div class="b-controls" id="interf">
+    <div>
+        <h3>1</h3>
+        <button class="c" id="arLeft">←</button>
+        <button class="c" id="arTop">↑</button>
+        <button class="c" id="arBottom">↓</button>
+        <button class="c" id="arRight">→</button>
+    </div>
+    <div>
+        <h3>взад вперед</h3>
+        <button class="c" id="arCome">↑</button>
+        <button class="c" id="arOut">↓</button>
+    </div>
+
+    <div>
+        <h3>x</h3>
+        <button class="c" id="rotateXRight">⤿</button>
+        <button class="c" id="rotateXLeft">⤾</button>
+        <h3>y</h3>
+        <button class="c" id="rotateYRight">⤿</button>
+        <button class="c" id="rotateYLeft">⤾</button>
+        <h3>z</h3>
+        <button class="c" id="rotateZRight">⤿</button>
+        <button class="c" id="rotateZLeft">⤾</button>
+    </div>
+    <button style="margin-top: 10px" onclick="dis()">Установить</button>
+</div>
+<div class="b-timeline">
+    <div class="b-timeline__item b-timeline__item--w3" id="lastlast">
+        <button data-number="1"></button>
+        <span>1.03.1881</span>
+    </div>
+    <div class="b-timeline__item b-timeline__item--w3" id="last">
+        <button data-number="2" ></button>
+        <span>1943 год</span>
+    </div>
+    <div class="b-timeline__item active b-timeline__item--w3" id="now">
+        <button data-number="3" ></button>
+        <span>Сегодня</span>
+    </div>
+</div>
+<script>
+    document.getElementById("now").addEventListener('click', function () {
+        now();
+    });
+    document.getElementById("last").addEventListener('click', function () {
+        day(obj21,obj11);
+    });
+    document.getElementById("lastlast").addEventListener('click', function () {
+        day(obj11,obj21);
+    });
+    var timeLineBtn = document.getElementById("timeLineBtn");
+    var timeLineBtns = document.getElementsByClassName('b-timeline__item');
+
+    for (i = 0; i < timeLineBtns.length; i++) {
+        timeLineBtns[i].addEventListener("click", function (event) {
+            if (event.target.type === 'submit') {
+                var number = event.target.getAttribute('data-number');
+                var parent = event.target.parentElement;
+                var parents = document.getElementsByClassName('b-timeline__item');
+                for (j = 0; j < parents.length; j++) {
+                    parents[j].classList.remove('active');
+                }
+                parent.classList.add("active");
+            }
+            else{
+                var target = event.target;
+                var parents = document.getElementsByClassName('b-timeline__item');
+                for (j = 0; j < parents.length; j++) {
+                    parents[j].classList.remove('active');
+                }
+                target.classList.add("active");
+            }
+        }, false);
+    }
+</script>
+<div id="info">
+
+    <!--<div id="buttons">-->
+        <!--<button id="now" onclick="now()">Настоящее</button>-->
+        <!--<button id="last" onclick="day(obj21,obj11)">Вчера</button>-->
+        <!--<button id="lastlast" onclick="day(obj11,obj21)">Позавчера</button>-->
+    <!--</div>-->
+</div>
+<script src="./lib/three.js/three.js"></script>
+<script src="./lib/three.js/VRControls.js"></script>
+<script src="./lib/three.js/OBJLoader.js"></script>
+<script src="./lib/three.js/MTLLoader.js"></script>
+<script src="./lib/dist/three.ar.js"></script>
+<script src="./assets/jq.js"></script>
+<script src="./lib/greensock-js/src/minified/TweenLite.min.js"></script>
+<script>
+
+
+
+</script>
+<script>
+    var isObj11Setted = false;
+    var isObj21Setted = false;
+    var isObj12Setted = false;
+    var isObj22Setted = false;
+    var curObj;
+
+
+
+
+
+    var vrDisplay;
+    var vrControls;
+    var arView;
+    var canvas;
+    var camera;
+    var scene;
+    var renderer;
+    var obj11;
+    var obj21;
+    var obj12;
+    var obj22;
+    var obj33;
+    var shadowMesh;
+    var planeGeometry;
+    var light;
+    var directionalLight;
+    var OBJ11_PATH = './asets/bossrelease.obj';
+    var MTL11_PATH = './asets/bossrelease.mtl';
+    var OBJ21_PATH = './asets/myman.obj';
+    var MTL21_PATH = './asets/myman.mtl';
+    var OBJ12_PATH = './asets/woman.obj';
+    var MTL12_PATH = './asets/woman.mtl';
+    var OBJ22_PATH = './asets/myman.obj';
+    var MTL22_PATH = './asets/myman.mtl';
+    var OBJ33_PATH = './asets/CARRESIZE.obj';
+    var MTL33_PATH = './asets/CARRESIZE.mtl';
+    var SCALE = 0.02;
+    /**
+     * Use the `getARDisplay()` utility to leverage the WebVR API
+     * to see if there are any AR-capable WebVR VRDisplays. Returns
+     * a valid display if found. Otherwise, display the unsupported
+     * browser message.
+     */
+    THREE.ARUtils.getARDisplay().then(function (display) {
+        if (display) {
+            vrDisplay = display;
+            init();
+        } else {
+            THREE.ARUtils.displayUnsupportedMessage();
+        }
+    });
+    function init() {
+
+        // Setup the three.js rendering environment
+        renderer = new THREE.WebGLRenderer({ alpha: true });
+        renderer.setPixelRatio(window.devicePixelRatio);
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.autoClear = false;
+        canvas = renderer.domElement;
+        document.body.appendChild(canvas);
+        scene = new THREE.Scene();
+        // Creating the ARView, which is the object that handles
+        // the rendering of the camera stream behind the three.js
+        // scene
+        arView = new THREE.ARView(vrDisplay, renderer);
+        // The ARPerspectiveCamera is very similar to THREE.PerspectiveCamera,
+        // except when using an AR-capable browser, the camera uses
+        // the projection matrix provided from the device, so that the
+        // perspective camera's depth planes and field of view matches
+        // the physical camera on the device.
+        camera = new THREE.ARPerspectiveCamera(
+            vrDisplay,
+            60,
+            window.innerWidth / window.innerHeight,
+            vrDisplay.depthNear,
+            vrDisplay.depthFar
+        );
+        // VRControls is a utility from three.js that applies the device's
+        // orientation/position to the perspective camera, keeping our
+        // real world and virtual world in sync.
+        vrControls = new THREE.VRControls(camera);
+        // For shadows to work
+        renderer.shadowMap.enabled = true;
+        renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+        // The materials in Poly models will render as a black mesh
+        // without lights in our scenes. Let's add an ambient light
+        // so our model can be scene, as well as a directional light
+        // for the shadow
+        directionalLight = new THREE.DirectionalLight();
+        // @TODO in the future, use AR light estimation
+        directionalLight.intensity = 0.3;
+        directionalLight.position.set(10, 15, 10);
+        // We want this light to cast shadow
+        directionalLight.castShadow = true;
+        light = new THREE.AmbientLight();
+        scene.add(light);
+        scene.add(directionalLight);
+        // Make a large plane to receive our shadows
+        planeGeometry = new THREE.PlaneGeometry(2000, 2000);
+        // Rotate our plane to be parallel to the floor
+        planeGeometry.rotateX(-Math.PI / 2);
+        // Create a mesh with a shadow material, resulting in a mesh
+        // that only renders shadows once we flip the `receiveShadow` property
+        shadowMesh = new THREE.Mesh(planeGeometry, new THREE.ShadowMaterial({
+            color: 0x111111,
+            opacity: 0.015,
+        }));
+        shadowMesh.receiveShadow = true;
+        scene.add(shadowMesh);
+        THREE.ARUtils.loadModel({
+            objPath: OBJ21_PATH,
+            mtlPath: MTL21_PATH,
+            OBJLoader: undefined, // uses window.THREE.OBJLoader by default
+            MTLLoader: undefined, // uses window.THREE.MTLLoader by default
+        }).then(function (group) {
+            obj21 = group;
+            // As OBJ models may contain a group with several meshes,
+            // we want all of them to cast shadow
+            obj21.children.forEach(function (mesh) {
+                mesh.castShadow = true;
+            });
+            obj21.scale.set(0.02, 0.02, 0.02);
+            // Place the model very far to initialize
+            obj21.position.set(0, 0, -3);
+
+        }).catch(function (e) {
+            alert("21");
+//      alert(JSON.stringify(e));
+        });
+        THREE.ARUtils.loadModel({
+            objPath: OBJ11_PATH,
+            mtlPath: MTL11_PATH,
+            OBJLoader: undefined, // uses window.THREE.OBJLoader by default
+            MTLLoader: undefined, // uses window.THREE.MTLLoader by default
+        }).then(function (group) {
+            obj11 = group;
+            // As OBJ models may contain a group with several meshes,
+            // we want all of them to cast shadow
+            obj11.children.forEach(function (mesh) {
+                mesh.castShadow = true;
+            });
+            obj11.scale.set(0.03, 0.03, 0.03);
+            // Place the model very far to initialize
+            obj11.position.set(0, 0, -3);
+
+
+        }).catch(function (e) {
+            alert("11");
+
+//      alert(JSON.stringify(e));
+        });
+        THREE.ARUtils.loadModel({
+            objPath: OBJ22_PATH,
+            mtlPath: MTL22_PATH,
+            OBJLoader: undefined, // uses window.THREE.OBJLoader by default
+            MTLLoader: undefined, // uses window.THREE.MTLLoader by default
+        }).then(function (group) {
+            obj22 = group;
+            // As OBJ models may contain a group with several meshes,
+            // we want all of them to cast shadow
+            obj22.children.forEach(function (mesh) {
+                mesh.castShadow = true;
+            });
+            obj22.scale.set(0.02, 0.02, 0.02);
+            // Place the model very far to initialize
+            obj22.position.set(0, 0, -3);
+
+        }).catch(function (e) {
+            alert("22");
+//      alert(JSON.stringify(e));
+        });
+        THREE.ARUtils.loadModel({
+            objPath: OBJ12_PATH,
+            mtlPath: MTL12_PATH,
+            OBJLoader: undefined, // uses window.THREE.OBJLoader by default
+            MTLLoader: undefined, // uses window.THREE.MTLLoader by default
+        }).then(function (group) {
+            obj12 = group;
+            // As OBJ models may contain a group with several meshes,
+            // we want all of them to cast shadow
+            obj12.children.forEach(function (mesh) {
+                mesh.castShadow = true;
+            });
+            obj12.scale.set(0.03, 0.03, 0.03);
+            // Place the model very far to initialize
+            obj12.position.set(0, 0, -3);
+
+
+        }).catch(function (e) {
+            alert("12");
+
+//      alert(JSON.stringify(e));
+        });
+
+        THREE.ARUtils.loadModel({
+            objPath: OBJ33_PATH,
+            mtlPath: MTL33_PATH,
+            OBJLoader: undefined, // uses window.THREE.OBJLoader by default
+            MTLLoader: undefined, // uses window.THREE.MTLLoader by default
+        }).then(function (group) {
+            obj33 = group;
+            // As OBJ models may contain a group with several meshes,
+            // we want all of them to cast shadow
+            obj33.children.forEach(function (mesh) {
+                mesh.castShadow = true;
+            });
+            obj33.scale.set(0.15, 0.15, 0.15);
+            // Place the model very far to initialize
+            obj33.position.set(0, 0, -3);
+        }).catch(function (e) {
+            alert("333");
+        });
+
+        // Bind our event handlers
+        window.addEventListener('resize', onWindowResize, false);
+        canvas.addEventListener('click', onClick, false);
+        // Kick off the render loop!
+        update();
+    }
+    /**
+     * The render loop, called once per frame. Handles updating
+     * our scene and rendering.
+     */
+    function update() {
+        // Clears color from the frame before rendering the camera (arView) or scene.
+        renderer.clearColor();
+        // Render the device's camera stream on screen first of all.
+        // It allows to get the right pose synchronized with the right frame.
+        arView.render();
+        // Update our camera projection matrix in the event that
+        // the near or far planes have updated
+        camera.updateProjectionMatrix();
+        // Update our perspective camera's positioning
+        vrControls.update();
+        // Render our three.js virtual scene
+        renderer.clearDepth();
+        renderer.render(scene, camera);
+        // Kick off the requestAnimationFrame to call this function
+        // when a new VRDisplay frame is rendered
+        vrDisplay.requestAnimationFrame(update);
+    }
+    /**
+     * On window resize, update the perspective camera's aspect ratio,
+     * and call `updateProjectionMatrix` so that we can get the latest
+     * projection matrix provided from the device
+     */
+    function onWindowResize() {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+    }
+    /**
+     * When clicking on the screen, fire a ray from where the user clicked
+     * on the screen and if a hit is found, place a cube there.
+     */
+    function onClick(e) {
+        // Inspect the event object and generate normalize screen coordinates
+        // (between 0 and 1) for the screen position.
+        var x = e.clientX / window.innerWidth;
+        var y = e.clientY / window.innerHeight;
+        // Send a ray from the point of click to the real world surface
+        // and attempt to find a hit. hitTest returns an array of potential
+        // hits.
+        var hits = vrDisplay.hitTest(x, y);
+        if (!obj33) {
+            alert('Сцена не готова');
+            console.warn('Сцена не готова');
+            return;
+        }
+
+        // If a hit is found, just use the first one
+        if (true || hits && hits.length) {
+          scene.add(obj33);
+//          var hit = hits[0];
+//            var matrix = new THREE.Matrix4();
+//            var position = new THREE.Vector3();
+//            matrix.fromArray(hit.modelMatrix);
+//            position.setFromMatrixPosition(matrix);
+//            shadowMesh.position.y = position.y;
+
+//            THREE.ARUtils.placeObjectAtHit(obj33,  // The object to place
+//                hit,   // The VRHit object to move the cube to
+//                1,     // Easing value from 0 to 1; we want to move
+//                // the cube directly to the hit position
+//                true); // Whether or not we also apply orientation
+//            // Rotate the model to be facing the user
+////      var angle = Math.atan2(
+////              camera.position.x - model.position.x,
+////              camera.position.z - model.position.z
+////          );
+//      model.rotation.set(0, angle, 0);
+
+          obj33.position.set(0, -2.5, 0);
+          if (obj33) {
+                var tween = TweenLite.to(obj33.position, 40, {
+//          x: 20,
+//          y: 20,
+                    z: 30,
+                    onUpdate: function () {
+                    }
+                });
+            }
+        }
+    }
+
+    function set() {
+        alert("set");
+    }
+
+
+    function hide() {
+        scene.remove(obj21);
+        animate();
+    }
+
+    function show() {
+        scene.add(obj21);
+    }
+
+    function day(lastObj,newObj) {
+
+        curObj = newObj;
+
+
+        if (curObj === obj11){
+            if (isObj11Setted && isObj12Setted){
+                $("#interf").hide();
+            }else {
+                $("#interf").show();
+            }
+        } else {
+            if (isObj21Setted && isObj22Setted){
+                $("#interf").hide();
+            }else {
+                $("#interf").show();
+            }
+        }
+
+        if (lastObj === obj11){
+            scene.remove(lastObj);
+            scene.remove(obj12);
+            if (isObj21Setted){
+                scene.add(obj22);
+            }
+        } else {
+            scene.remove(lastObj);
+            scene.remove(obj22);
+            if (isObj12Setted){
+                scene.add(obj12);
+            }
+        }
+
+        scene.add(newObj);
+
+        animate();
+    }
+
+
+    function dis() {
+
+        if (curObj === obj11 || curObj === obj12){
+            if (isObj11Setted){
+                isObj12Setted = true;
+                $("#interf").hide();
+
+            } else {
+                isObj11Setted = true;
+                scene.add(obj12);
+                curObj = obj12;
+            }
+
+
+
+
+        } else {
+            if (isObj21Setted){
+                isObj22Setted = true;
+                $("#interf").hide();
+            } else {
+                isObj21Setted = true;
+                scene.add(obj22);
+                curObj = obj22;
+            }
+
+        }
+    }
+
+    function now() {
+        $("#interf").hide();
+        if (curObj === obj11 || curObj === obj12){
+            scene.remove(obj11);
+            scene.remove(obj12);
+        } else {
+            scene.remove(obj21);
+            scene.remove(obj22);
+        }
+        animate();
+    }
+
+    var step = 0.1;
+    var arLeft = document.getElementById("arLeft");
+    var arTop = document.getElementById("arTop");
+    var arBottom = document.getElementById("arBottom");
+    var arRight = document.getElementById("arRight");
+    var arOut = document.getElementById("arOut");
+    var arCome = document.getElementById("arCome");
+    var rotateXRight = document.getElementById("rotateXRight");
+    var rotateXLeft = document.getElementById("rotateXLeft");
+    var rotateYRight = document.getElementById("rotateYRight");
+    var rotateYLeft = document.getElementById("rotateYLeft");
+    var rotateZRight = document.getElementById("rotateZRight");
+    var rotateZLeft = document.getElementById("rotateZLeft");
+    arLeft.addEventListener('click', function () {
+        curObj.position.set(curObj.position.x - step ,curObj.position.y,curObj.position.z);
+    }, false);
+    arTop.addEventListener('click', function () {
+        curObj.position.set(curObj.position.x ,curObj.position.y + step,curObj.position.z);
+    }, false);
+    arBottom.addEventListener('click', function () {
+        curObj.position.set(curObj.position.x ,curObj.position.y - step,curObj.position.z);
+    }, false);
+    arRight.addEventListener('click', function () {
+        curObj.position.set(curObj.position.x + step ,curObj.position.y,curObj.position.z);
+    }, false);
+    arOut.addEventListener('click', function () {
+        curObj.position.set(curObj.position.x,curObj.position.y,curObj.position.z + step);
+    }, false);
+    arCome.addEventListener('click', function () {
+        curObj.position.set(curObj.position.x ,curObj.position.y,curObj.position.z - step);
+    }, false);
+
+
+    rotateXRight.addEventListener('click', function () {
+        curObj.rotateX(0.2);
+    }, false);
+    rotateXLeft.addEventListener('click', function () {
+        curObj.rotateX(-0.2);
+    }, false);
+    rotateYRight.addEventListener('click', function () {
+        curObj.rotateY(0.2);
+    }, false);
+    rotateYLeft.addEventListener('click', function () {
+        curObj.rotateY(-0.2);
+    }, false);
+    rotateZRight.addEventListener('click', function () {
+        curObj.rotateZ(0.2);
+    }, false);
+    rotateZLeft.addEventListener('click', function () {
+        curObj.rotateZ(-0.2);
+    }, false);
+</script>
+</body>
+</html>
