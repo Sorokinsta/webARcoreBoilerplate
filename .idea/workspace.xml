@@ -2,54 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca93bed8-4cf2-46c2-829a-eca5b6530d92" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/12eb45d5.dds" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/3b4808b5.dds" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/53e66e36.dds" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/5596e237.dds" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/ArcticFox_Diffuse.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/Coach1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/Coach2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/Coach3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/Coach4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/Coach5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/Coach6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/Coach7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/b601b4c9.dds" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/bill_color.tga" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/bill_hair.tga" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/bill_head.tga" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/bill_head_compress.tga" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/bill_head_normal.tga" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/bill_normal.tga" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/c4bc344c.dds" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/eye-iris-blue.tga" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/eye-reflection-cubemap-.tga" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/survivor_eye_ao.tga" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/ArcticFox_Posed.mtl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/ArcticFox_Posed.obj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/CARRESIZE.mtl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/CARRESIZE.obj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/N.mtl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/N.obj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/attributions.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/bossSolider.mtl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/bossSolider.obj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/bossrelease.mtl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/bossrelease.obj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/car2.mtl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/car2.obj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/manwithtable.mtl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/manwithtable.obj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/myman.mtl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/myman.obj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/onlyManWith.mtl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/onlyManWith.obj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/soldier.obj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/woman.mtl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asets/woman.obj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/jq.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/d.html" afterPath="$PROJECT_DIR$/d.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -67,8 +20,8 @@
       <file leaf-file-name="d.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/d.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="508" column="29" lean-forward="true" selection-start-line="508" selection-start-column="29" selection-end-line="508" selection-end-column="29" />
+            <state relative-caret-position="202">
+              <caret line="537" column="53" lean-forward="false" selection-start-line="537" selection-start-column="53" selection-end-line="537" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -323,7 +276,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43756000" />
+    <option name="totallyTimeSpent" value="46813000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -597,8 +550,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/d.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="508" column="29" lean-forward="true" selection-start-line="508" selection-start-column="29" selection-end-line="508" selection-end-column="29" />
+        <state relative-caret-position="202">
+          <caret line="537" column="53" lean-forward="false" selection-start-line="537" selection-start-column="53" selection-end-line="537" selection-end-column="53" />
           <folding />
         </state>
       </provider>
