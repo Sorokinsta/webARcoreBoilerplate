@@ -1,0 +1,324 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 14.04.2018 14:51:23
+
+newmtl YWood2
+	Ns 20.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.1749 0.1749 0.1749
+	Ke 0.0000 0.0000 0.0000
+	map_Ka Coach3.jpg
+	map_Kd Coach3.jpg
+
+newmtl YWood1
+	Ns 20.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.1749 0.1749 0.1749
+	Ke 0.0000 0.0000 0.0000
+	map_Ka Coach1.jpg
+	map_Kd Coach1.jpg
+
+newmtl YMetal2
+	Ns 20.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.1749 0.1749 0.1749
+	Ke 0.0000 0.0000 0.0000
+	map_Ka Coach3.jpg
+	map_Kd Coach3.jpg
+
+newmtl YMetal1
+	Ns 20.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.1749 0.1749 0.1749
+	Ke 0.0000 0.0000 0.0000
+	map_Ka Coach1.jpg
+	map_Kd Coach1.jpg
+
+newmtl RWood1
+	Ns 20.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.1749 0.1749 0.1749
+	Ke 0.0000 0.0000 0.0000
+	map_Ka Coach1.jpg
+	map_Kd Coach1.jpg
+
+newmtl Metal2
+	Ns 20.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.1749 0.1749 0.1749
+	Ke 0.0000 0.0000 0.0000
+	map_Ka Coach3.jpg
+	map_Kd Coach3.jpg
+
+newmtl Wood2
+	Ns 20.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.1749 0.1749 0.1749
+	Ke 0.0000 0.0000 0.0000
+	map_Ka Coach5.jpg
+	map_Kd Coach5.jpg
+
+newmtl Leather1
+	Ns 20.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.1749 0.1749 0.1749
+	Ke 0.0000 0.0000 0.0000
+	map_Ka Coach4.jpg
+	map_Kd Coach4.jpg
+
+newmtl Leather2
+	Ns 20.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.1749 0.1749 0.1749
+	Ke 0.0000 0.0000 0.0000
+	map_Ka Coach5.jpg
+	map_Kd Coach5.jpg
+
+newmtl YWood4
+	Ns 20.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.1749 0.1749 0.1749
+	Ke 0.0000 0.0000 0.0000
+	map_Ka Coach6.jpg
+	map_Kd Coach6.jpg
+
+newmtl Metal5
+	Ns 20.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.1749 0.1749 0.1749
+	Ke 0.0000 0.0000 0.0000
+	map_Ka Coach6.jpg
+	map_Kd Coach6.jpg
+
+newmtl Metal4
+	Ns 20.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.1749 0.1749 0.1749
+	Ke 0.0000 0.0000 0.0000
+	map_Ka Coach5.jpg
+	map_Kd Coach5.jpg
+
+newmtl Wood1
+	Ns 20.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.1749 0.1749 0.1749
+	Ke 0.0000 0.0000 0.0000
+	map_Ka Coach3.jpg
+	map_Kd Coach3.jpg
+
+newmtl Leather3
+	Ns 20.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.1749 0.1749 0.1749
+	Ke 0.0000 0.0000 0.0000
+	map_Ka Coach6.jpg
+	map_Kd Coach6.jpg
+
+newmtl Glass1
+	Ns 20.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.1749 0.1749 0.1749
+	Ke 0.0000 0.0000 0.0000
+	map_Ka Coach3.jpg
+	map_Kd Coach3.jpg
+
+newmtl Metal1
+	Ns 20.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.1749 0.1749 0.1749
+	Ke 0.0000 0.0000 0.0000
+	map_Ka Coach1.jpg
+	map_Kd Coach1.jpg
+
+newmtl RWood2
+	Ns 20.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.1749 0.1749 0.1749
+	Ke 0.0000 0.0000 0.0000
+	map_Ka Coach2.jpg
+	map_Kd Coach2.jpg
+
+newmtl YWood3
+	Ns 20.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.1749 0.1749 0.1749
+	Ke 0.0000 0.0000 0.0000
+	map_Ka Coach5.jpg
+	map_Kd Coach5.jpg
+
+newmtl Metal3
+	Ns 20.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.1749 0.1749 0.1749
+	Ke 0.0000 0.0000 0.0000
+	map_Ka Coach4.jpg
+	map_Kd Coach4.jpg
+
+newmtl L_Horse
+	Ns 20.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.0263 0.0195 0.0108
+	Ke 0.0000 0.0000 0.0000
+	map_Ka Coach7.jpg
+	map_Kd Coach7.jpg
+
+newmtl R_Horse
+	Ns 20.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.0263 0.0195 0.0108
+	Ke 0.0000 0.0000 0.0000
+	map_Ka Coach7.jpg
+	map_Kd Coach7.jpg
+
+newmtl Misc1
+	Ns 20.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.1749 0.1749 0.1749
+	Ke 0.0000 0.0000 0.0000
+	map_Ka Coach1.jpg
+	map_Kd Coach1.jpg
+
+newmtl RWood3
+	Ns 20.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.1749 0.1749 0.1749
+	Ke 0.0000 0.0000 0.0000
+	map_Ka Coach5.jpg
+	map_Kd Coach5.jpg
